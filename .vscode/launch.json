@@ -1,0 +1,85 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Chapter 5: GPT train",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/ch05/01_main-chapter-code/gpt_train.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            }
+        }
+        ,
+        {
+            "name": "Chapter 5: GPT generate",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/ch05/01_main-chapter-code/gpt_generate.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            }
+        }
+        ,
+        {
+            "name": "Chapter 6: GPT class finetune",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/ch06/01_main-chapter-code/gpt_class_finetune.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            }
+        }
+        ,
+        {
+            "name": "Chapter 7: GPT instruction finetuning",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/ch07/01_main-chapter-code/gpt_instruction_finetuning.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            }
+        },
+        {
+            "name": "Chapter 7: Ollama evaluate",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/ch07/01_main-chapter-code/ollama_evaluate.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            }
+        },
+        // {
+        //     "name": "LP: Run GPT Implementation",
+        //     "type": "python",
+        //     "request": "launch",
+        //     "program": "${workspaceFolder}/run.py",
+        //     "console": "integratedTerminal",
+        //     "justMyCode": true,
+        //     "env": {
+        //         "PYTHONPATH": "${workspaceFolder}"
+        //     }
+        // },
+        {
+            "name": "LP: Run GPT Implementation (Module)",
+            "type": "python",
+            "request": "launch",
+            "module": "lp.main",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            }
+        }
+    ]
+}
