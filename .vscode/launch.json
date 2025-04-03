@@ -71,22 +71,22 @@
                 "PYTHONPATH": "${workspaceFolder}"
             }
         },
-        // {
-        //     "name": "LP: Run GPT Implementation",
-        //     "type": "python",
-        //     "request": "launch",
-        //     "program": "${workspaceFolder}/run.py",
-        //     "console": "integratedTerminal",
-        //     "justMyCode": true,
-        //     "env": {
-        //         "PYTHONPATH": "${workspaceFolder}"
-        //     }
-        // },
         {
-            "name": "LP: Run GPT Implementation (Module)",
+            "name": "Chapter 7: GPT Tool Multiturn Finetuning",
             "type": "python",
             "request": "launch",
-            "module": "lp.main",
+            "program": "${workspaceFolder}/ch07/01_main-chapter-code/gpt_tool_multiturn_finetuning.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            }
+        },
+        {
+            "name": "Chapter 7: GPT Tool Finetuning",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/ch07/01_main-chapter-code/gpt_tool_finetuning.py",
             "console": "integratedTerminal",
             "justMyCode": true,
             "env": {
