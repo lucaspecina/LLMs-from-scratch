@@ -50,7 +50,7 @@ class ToolDataset(Dataset):
         
         for entry in data:
             formatted_text, mask_positions = self.format_entry(entry)
-            encoded = tokenizer.encode(formatted_text)
+            encoded = tokenizer.encode(formatted_text, allowed_special="all")
             self.encoded_texts.append(encoded)
             
             # Convert mask positions from character indices to token indices
@@ -58,8 +58,8 @@ class ToolDataset(Dataset):
             for start, end in mask_positions:
                 # This is approximate - in a real implementation you'd need to
                 # align character and token indices precisely
-                start_tokens = len(tokenizer.encode(formatted_text[:start]))
-                end_tokens = len(tokenizer.encode(formatted_text[:end]))
+                start_tokens = len(tokenizer.encode(formatted_text[:start], allowed_special="all"))
+                end_tokens = len(tokenizer.encode(formatted_text[:end], allowed_special="all"))
                 mask_token_indices.append((start_tokens, end_tokens))
             
             self.mask_indices.append(mask_token_indices)
@@ -343,7 +343,7 @@ def main(test_mode=False):
     )
 
     num_workers = 0
-    batch_size = 8
+    batch_size = 2
 
     torch.manual_seed(123)
 

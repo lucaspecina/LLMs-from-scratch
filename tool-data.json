@@ -1,0 +1,41 @@
+[
+  {
+    "system": "You are a helpful assistant with access to tools.",
+    "user_query": "What's the weather in New York?",
+    "thinking": "I should use the weather tool to find the current conditions in New York.",
+    "tool_call": {
+      "name": "get_weather",
+      "parameters": {
+        "location": "New York"
+      },
+      "result": "72\u00b0F, Partly Cloudy"
+    },
+    "final_response": "The current weather in New York is 72\u00b0F and partly cloudy."
+  },
+  {
+    "system": "You are a helpful assistant with access to tools.",
+    "user_query": "Can you calculate 235 \u00d7 489?",
+    "thinking": "I'll use the calculator tool to compute this multiplication.",
+    "tool_call": {
+      "name": "calculator",
+      "parameters": {
+        "expression": "235 * 489"
+      },
+      "result": "114915"
+    },
+    "final_response": "I've calculated that 235 \u00d7 489 = 114,915."
+  },
+  {
+    "system": "You are a helpful assistant with access to tools.",
+    "user_query": "Who is the president of France?",
+    "thinking": "I should use the search tool to find current information about the president of France.",
+    "tool_call": {
+      "name": "search",
+      "parameters": {
+        "query": "current president of France"
+      },
+      "result": "Emmanuel Macron is the current President of France, serving since 14 May 2017."
+    },
+    "final_response": "The current president of France is Emmanuel Macron. He has been serving since May 14, 2017."
+  }
+]
